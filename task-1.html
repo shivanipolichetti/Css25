@@ -1,0 +1,108 @@
+<html>
+    <head><meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animation task</title>
+        <style>
+            body{ 
+                text-align: center;
+            }
+            :root{
+                --a:darkgray;
+                --c:darkblue;
+            }
+           
+           .a{
+             background-color:var(--a);
+             width:10px;
+             height:20px;
+             animation-name:song;
+             animation-duration:4s;
+             animation-iteration-count: infinite;
+             display: inline-block;
+             animation-direction:normal;
+             position:relative;
+              top:10px;
+           }
+           .b{
+             background-color:var(--c);
+             width:5px;
+             height:40px;
+             animation-name:song;
+             animation-duration:4s;
+             animation-iteration-count: infinite;
+             display:inline-block;
+             animation-direction: alternate;
+             position:relative;
+             top:10px;
+           }
+           .c{
+             background-color:var(--a);
+             width:10px;
+             height:30px;
+             animation-name:song;
+             animation-duration:4s;
+             animation-iteration-count: infinite;
+             display:inline-block;
+             animation-direction:reverse;
+             transition:width 2s;
+             position:relative;
+              top:10px;
+           }
+           .d{
+             background-color:var(--c);
+             width:5px;
+             height:60px;
+             animation-name:song;
+             animation-duration:4s;
+             animation-iteration-count: infinite;
+             display: inline-block;
+             animation-direction:alternate-reverse;
+             position:relative;
+             top:10px;
+           }
+
+            @keyframes song {
+                0%{
+                    padding-top: 40px;;
+                }
+                50%{
+                    padding-top:90px;
+                }   
+                
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Spotify</h1>
+        <img src="./movie.jpeg">
+        <br><br>
+        <audio controls>
+            <source src="./[iSongs.info] 01 - Hanuman Chalisa.mp3">
+        </audio>
+        <br><br>
+        
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        
+        
+    </body>
+
+</html>

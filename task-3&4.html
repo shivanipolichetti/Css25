@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover an image</title>
+    <style>
+        :root{
+            --a:green;
+        }
+        h1{
+            color:blueviolet;
+            font-family: fantasy;
+            text-decoration:underline pink;
+        }
+      
+          img{
+
+            width:100px;
+            height:90px;
+            display:inline-block;
+            transition:all 4s;
+        }
+        img:hover{
+            width: 300px;
+            height:400px;
+            border:5px solid;
+        }
+       
+        .l{
+            background-color:var(--a);
+            border:dashed black;
+            opacity:0;
+            transition:2s;
+        }
+        .m{
+            background-color:var(--a);
+            border:dashed black;
+            opacity: 0;
+            text-align: center;
+        }
+        .n{
+            background-color:var(--a);
+            opacity: 0;
+            border:dashed black;
+        } 
+        .o{
+            background-color:var(--a);
+            opacity: 0;
+            border: dashed black;
+        }
+     .a:hover ~ .l{
+            opacity:0.3;
+            visibility: visible;
+            width:50px;
+            height:40px;
+            
+        }
+        .b:hover ~ .m{
+            opacity:0.5;
+            visibility: visible;
+            width:200px;
+            height:100px;
+            
+        }
+        .c:hover ~ .n{
+            opacity:0.7;
+            visibility: visible;
+            width:400px;
+            height:100px;
+            
+        }
+        .d:hover ~ .o{
+            opacity:1;
+            visibility: visible;
+            width:1000px;
+            height:100px;
+            
+        }   
+
+    </style>
+</head>
+<body style="text-align: center;">
+       <div>
+        <h1>Task-3</h1>
+        <p>To enlarge the image click on "image"</p>
+        <img src="./img.jpeg">
+         </div>
+         <br><br>
+         <div>
+             <h1>TASK-4</h1>
+             <p>Click on below button to see how much is loaded.</p>
+
+            <button class="a">0%</button>&nbsp;
+            <button class="b">25%</button>&nbsp;
+            <button class="c">50%</button>&nbsp;
+            <button class="d">100%</button>&nbsp;
+
+            <p class="l">0% loading</p>
+            <p class="m">25% loading</p>
+            <p class="n">50% loading</p>
+            <p class="o">100% loading</p>
+              
+            
+         </div>   
+</body>
+</html>
